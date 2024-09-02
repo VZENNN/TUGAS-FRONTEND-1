@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #f8f9fa;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 40px auto; 
+    padding: 40px;
+    background-color: #333; 
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ff8c00;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.profile-info h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #ff8c00;
+}
+
+.profession {
+    font-size: 1.3rem;
+    margin: 5px 0;
+    color: #f8f9fa;
+}
+
+.location a {
+    color: #ffa07a;
+    text-decoration: none;
+}
+
+.location a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 30px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.about h2, .skills h2, .experience h2, .education h2, .certifications h2, .hobbies h2, .language h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    color: #ff8c00;
+}
+
+.skills ul, .experience p, .education p, .certifications p, .hobbies p, .language p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 2px solid #ff8c00;
+    color: #ffa07a;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Print Styles */
+@media print {
+    .cv-container {
+        box-shadow: none;
+        border: none;
+        background-color: #333;
+    }
+}
